@@ -1,0 +1,15 @@
+.panel {
+  align-items: flex-start;
+  max-width: 520px;
+}
+
+.text {
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .panel {
+    margin-top: var(--space-4);
+  }
+}
