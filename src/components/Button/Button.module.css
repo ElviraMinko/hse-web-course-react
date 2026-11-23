@@ -1,0 +1,116 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: var(--control-height);
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition), opacity var(--transition), transform 0.1s;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.primary {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.primary:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-primary-hover);
+}
+
+.primary:disabled:hover {
+  background: var(--color-accent);
+  box-shadow: none;
+}
+
+.secondary {
+  background: var(--color-surface);
+  border-color: var(--color-border-strong);
+  color: var(--color-text);
+}
+
+.secondary:hover {
+  background: var(--color-surface-muted);
+  border-color: var(--color-border-hover);
+  color: var(--color-text);
+}
+
+.quiet {
+  height: 36px;
+  padding: 0 var(--space-3);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--text-md);
+}
+
+.quiet:hover {
+  background: var(--color-surface-sunken);
+  color: var(--color-text);
+}
+
+.text {
+  padding: 0 10px;
+  background: transparent;
+  color: var(--color-accent);
+}
+
+.text:hover {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-hover);
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.iconButton:hover {
+  background: var(--color-surface-sunken);
+  color: var(--color-text);
+}
+
+.danger:hover {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.accent {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.accent:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-inverse);
+}

@@ -1,0 +1,22 @@
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.large { width: 36px; height: 36px; font-size: var(--text-sm); }
+.xlarge { width: 40px; height: 40px; font-size: var(--text-sm); }
+
+.indigo { background: var(--member-indigo-bg); color: var(--member-indigo-fg); }
+.orange { background: var(--member-orange-bg); color: var(--member-orange-fg); }
+.green { background: var(--member-green-bg); color: var(--member-green-fg); }
+.yellow { background: var(--member-yellow-bg); color: var(--member-yellow-fg); }
+.purple { background: var(--member-purple-bg); color: var(--member-purple-fg); }
+.sky { background: var(--member-sky-bg); color: var(--member-sky-fg); }
+.unassigned { background: var(--color-surface-sunken); color: var(--color-text-muted); }
